@@ -3,7 +3,6 @@
 # Andrew Hills (a.hills@sheffield.ac.uk)
 
 FROM ubuntu:latest
-MAINTAINER: Andrew Hills (a.hills@sheffield.ac.uk)
 
 RUN sed -i 's/# \(.*multiverse$\)/\1/g' /etc/apt/sources.list && \
     apt-get update && \
