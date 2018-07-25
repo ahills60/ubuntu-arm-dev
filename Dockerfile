@@ -11,6 +11,7 @@ RUN sed -i 's/# \(.*multiverse$\)/\1/g' /etc/apt/sources.list && \
     apt-get install -y software-properties-common && \
     apt-get install -y byobu curl git htop man unzip vim wget && \
     apt-get install -y gcc-6-arm-linux-gnueabihf openssh-client git-lfs make && \
+    apt-get install -y doxygen doxygen-latex graphviz gsfonts libgd-tools latexmk psutils && \
     rm -rf /var/lib/apt/lists/*
 RUN mkdir -p ~/.ssh && \
     chmod 700 ~/.ssh
